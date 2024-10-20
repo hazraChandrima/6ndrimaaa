@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export function Skills() {
     return (
         <div className="h-auto flex flex-col px-4 py-20 scroll-smooth" id="skills">

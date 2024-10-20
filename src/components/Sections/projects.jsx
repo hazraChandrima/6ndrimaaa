@@ -1,15 +1,18 @@
 import { FocusCards } from "@/components/ui/focus-cards";
 import Image from "next/image";
+import React from "react";
+import mm from '@/assets/images/mm.png';
+import mvi from '@/assets/images/mvi.png'
 
 export function Projects() {
     const cards = [
         {
-            title: "Forest Adventure",
-            src: "https://assets.aceternity.com/the-first-rule.png",
+            title: "Money Master",
+            src: mm,
         },
         {
-            title: "Valley of life",
-            src: "https://assets.aceternity.com/the-first-rule.png",
+            title: "NIT Jamshedpur Lab" ,
+            src: mvi,
         },
         {
             title: "Sala behta hi jayega",
@@ -30,13 +33,27 @@ export function Projects() {
     ];
 
     return (
-        <div className="m-5" id="projects">
-            <div className="flex items-center justify-center w-full">
+        <div className="h-auto px-4 py-20 scroll-smooth" id="projects">
+            <div className="w-full flex flex-col justify-center items-center">
+                <div className="text-center">
+                    <h1
+                        className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 my-10  pb-8">
+                        My Projects
+                    </h1>
+                </div>
+            </div>
+
+            <FocusCards cards={cards}/>
+
+            <div>
+                <h1 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 pb-6">
+                    My GitHub Stats
+                </h1>
                 <Image alt={"GitHub stats"}
                        src="https://raw.githubusercontent.com/hazraChandrima/hazraChandrima/master/profile-3d-contrib/profile-night-green.svg"
-                       width={640} height={425}/>
+                       width={640} height={425}
+                       layout="intrinsic"/>
             </div>
-            <FocusCards cards={cards}/>
         </div>
 
     );

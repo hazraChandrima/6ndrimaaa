@@ -67,7 +67,7 @@ export default function Navbar() {
                             <span
                                 className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                                 <span className="font-semibold mx-4">
-                                    <Link href="/">Resume</Link>
+                                    <Link href="https://drive.google.com/file/d/1ZHzxl2uPdH61zODSyH0DepnokobjIVnC/view?usp=sharing">Resume</Link>
                                 </span>
                             </span>
                         </button>
