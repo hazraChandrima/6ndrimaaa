@@ -3,7 +3,7 @@
     position: relative;
 }
 
-.navbar-option:hover {
+.test:hover .navbar-option {
     text-shadow: 4px 4px 12px rgba(233, 246, 255, 0.75);
 }
 
