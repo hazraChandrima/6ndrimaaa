@@ -74,10 +74,16 @@ export function Contact() {
 
     ];
     return (
-        (<div className="flex items-center justify-center h-[35rem] w-full" id="contact">
+        (<div className="flex flex-col items-center justify-center h-[35rem] w-full" id="contact">
+            <div className="text-center">
+                <h1
+                    className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-10 pb-8 ">
+                    Let's Connect!
+                </h1>
+            </div>
             <FloatingDock
                 mobileClassName="translate-y-20"
-                items={links} />
+                items={links}/>
         </div>)
     );
 }

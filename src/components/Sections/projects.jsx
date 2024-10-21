@@ -2,8 +2,10 @@ import { FocusCards } from "@/components/ui/focus-cards";
 import Image from "next/image";
 import React from "react";
 import mm from '@/assets/images/mm.png';
-import mvi from '@/assets/images/mvi.png';
+import mvai from '@/assets/images/mvai.png';
 import portfolio from '@/assets/images/portfolio.png'
+import nirmas from '@/assets/images/nirmas.png'
+import myn from '@/assets/images/myn.png'
 
 export function Projects() {
     const cards = [
@@ -13,20 +15,20 @@ export function Projects() {
         },
         {
             title: "NIT Jamshedpur Lab" ,
-            src: mvi,
+            src: mvai,
         },
         {
             title: "Personal Portfolio",
             src: portfolio,
         },
-        // {
-        //     title: "Camping is for pros",
-        //     src: "https://assets.aceternity.com/the-first-rule.png",
-        // },
-        // {
-        //     title: "The road not taken",
-        //     src: "https://assets.aceternity.com/the-first-rule.png",
-        // },
+        {
+            title: "Nirmas",
+            src: nirmas,
+        },
+        {
+            title: "Adding color analysis feature to E-Commerce app ",
+            src: myn,
+        },
     ];
 
     return (

@@ -20,7 +20,7 @@ export const Card = React.memo(({
       src={card.src}
       alt={card.title}
       fill
-      className="object-cover absolute inset-0" />
+      className="object-cover absolute inset-0 border-[1px] border-neutral-800 rounded-lg" />
     <div
       className={cn(
         "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",
