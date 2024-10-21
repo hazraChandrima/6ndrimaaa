@@ -16,11 +16,9 @@ export function Hero() {
                     Great to have you here!
                 </h1>
                 <p
-                    className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-                    Spotlight effect is a great way to draw attention to a specific part
-                    of the page. Here, we are drawing the attention towards the text
-                    section of the page. I don&apos;t know why but I&apos;m running out of
-                    copy.
+                    className="mt-10 font-normal text-lg text-neutral-300 max-w-lg text-center mx-auto">
+                    I'm a developer from India who loves open source and debugging my life away.
+                    Sometimes, my code runs correctly... And those are the moments that keep me going!
                 </p>
             </div>
         </div>)

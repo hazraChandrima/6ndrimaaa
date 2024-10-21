@@ -2,7 +2,8 @@ import { FocusCards } from "@/components/ui/focus-cards";
 import Image from "next/image";
 import React from "react";
 import mm from '@/assets/images/mm.png';
-import mvi from '@/assets/images/mvi.png'
+import mvi from '@/assets/images/mvi.png';
+import portfolio from '@/assets/images/portfolio.png'
 
 export function Projects() {
     const cards = [
@@ -15,21 +16,17 @@ export function Projects() {
             src: mvi,
         },
         {
-            title: "Sala behta hi jayega",
-            src: "https://assets.aceternity.com/the-first-rule.png",
+            title: "Personal Portfolio",
+            src: portfolio,
         },
-        {
-            title: "Camping is for pros",
-            src: "https://assets.aceternity.com/the-first-rule.png",
-        },
-        {
-            title: "The road not taken",
-            src: "https://assets.aceternity.com/the-first-rule.png",
-        },
-        {
-            title: "The First Rule",
-            src: "https://assets.aceternity.com/the-first-rule.png",
-        },
+        // {
+        //     title: "Camping is for pros",
+        //     src: "https://assets.aceternity.com/the-first-rule.png",
+        // },
+        // {
+        //     title: "The road not taken",
+        //     src: "https://assets.aceternity.com/the-first-rule.png",
+        // },
     ];
 
     return (
@@ -45,14 +42,14 @@ export function Projects() {
 
             <FocusCards cards={cards}/>
 
-            <div>
-                <h1 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 pb-6">
+            <div className="mt-24">
+                <h1 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 py-6 mb-8">
                     My GitHub Stats
                 </h1>
                 <Image alt={"GitHub stats"}
                        src="https://raw.githubusercontent.com/hazraChandrima/hazraChandrima/master/profile-3d-contrib/profile-night-green.svg"
                        width={640} height={425}
-                       layout="intrinsic"/>
+                       layout="intrinsic" className="mx-auto"/>
             </div>
         </div>
 
