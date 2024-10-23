@@ -16,8 +16,8 @@ export function Hero() {
                     Great to have you here!
                 </h1>
                 <p
-                    className="mt-10 font-normal text-lg text-neutral-300 max-w-lg text-center mx-auto">
-                    I&apos;m a developer from India who loves open source and debugging my life away.
+                    className="mt-14 font-normal text-lg text-neutral-300 max-w-lg text-center mx-auto">
+                    I&apos;m a developer from India.
                     Sometimes, my code runs correctly... And those are the moments that keep me going!
                 </p>
             </div>

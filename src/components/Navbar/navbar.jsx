@@ -41,13 +41,13 @@ export default function Navbar() {
                             </span>
                         </Link>
 
-                        <Link href="/#timeline">
-                            <span className="test p-4 cursor-pointer">
-                              <span className="navbar-option font-semibold scroll-smooth">
-                                Timeline
-                              </span>
-                            </span>
-                        </Link>
+                        {/*<Link href="/#timeline">*/}
+                        {/*    <span className="test p-4 cursor-pointer">*/}
+                        {/*      <span className="navbar-option font-semibold scroll-smooth">*/}
+                        {/*        Timeline*/}
+                        {/*      </span>*/}
+                        {/*    </span>*/}
+                        {/*</Link>*/}
 
                         <Link href="/#contact">
                             <span className="test p-4 cursor-pointer">
