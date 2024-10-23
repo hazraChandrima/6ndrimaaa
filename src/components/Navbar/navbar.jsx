@@ -4,13 +4,13 @@ import './navbar.css';
 export default function Navbar() {
     return (
         <nav
-            className="navbar invisible  w-full lg:visible fixed z-50 h-16 border-b backdrop-blur-md border-transparent shadow-xl scroll-smooth">
+            className="navbar w-dvw invisible sm:visible fixed z-50 h-20 border-b backdrop-blur-md border-transparent shadow-xl scroll-smooth">
             <div className="container-fluid text-gray-100 h-full">
-                <div className="flex flex-row justify-between items-center h-full px-5">
+                <div className="flex flex-row justify-between items-center h-full px-10">
 
                     <div className="flex flex-row items-center space-x-4 h-full">
                         <Link href="/#">
-                            <span className="test p-4 cursor-pointer">
+                            <span className="test pr-4 cursor-pointer">
                               <span className="navbar-option font-semibold scroll-smooth">
                                 Home
                               </span>

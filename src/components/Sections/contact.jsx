@@ -20,7 +20,7 @@ export function Contact() {
             icon: (
                 <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "www.linkedin.com/in/chandrima-hazra-65494a219",
+            href: "https://linkedin.com/in/chandrima-hazra-65494a219",
         },
         {
             title: "GitHub",
@@ -74,10 +74,10 @@ export function Contact() {
 
     ];
     return (
-        (<div className="flex flex-col items-center justify-center h-[35rem] w-full" id="contact">
+        (<div className="flex flex-col items-center justify-center h-[35rem] border-gray-700 border-t-[1px] w-full" id="contact">
             <div className="text-center">
                 <h1
-                    className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-10 pb-8 ">
+                    className="text-5xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-10 pb-8 ">
                     Let&apos;s Connect!
                 </h1>
             </div>

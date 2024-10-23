@@ -45,7 +45,7 @@ export function Projects() {
             <FocusCards cards={cards}/>
 
             <div className="mt-24">
-                <h1 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 py-6 mb-8">
+                <h1 className="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 py-6 mb-8">
                     My GitHub Stats
                 </h1>
                 <Image alt={"GitHub stats"}
