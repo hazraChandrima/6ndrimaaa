@@ -6,7 +6,7 @@ export function Skills() {
             <div className="text-center">
                 <h1
                     className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 my-10  pb-8">
-                    Technologies I've worked with
+                    Technologies I&apos;ve worked with
                 </h1>
             </div>
             <div align="center">

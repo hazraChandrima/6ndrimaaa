@@ -78,7 +78,7 @@ export function Contact() {
             <div className="text-center">
                 <h1
                     className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-10 pb-8 ">
-                    Let's Connect!
+                    Let&apos;s Connect!
                 </h1>
             </div>
             <FloatingDock

@@ -1,7 +1,7 @@
 import React from "react";
 import { FlipWords } from "../ui/flip-words";
-import Image from 'next/image'
-import pfp from '@/assets/images/profile.jpeg'
+import Image from "next/image";
+import pfp from "@/assets/images/profile.jpeg";
 
 export function About() {
     const words = ["chess", "photography", "painting", "piano", "swimming"];
@@ -27,7 +27,7 @@ export function About() {
 
                 <div className="text-xl mt-16 mb-10 text-neutral-500 dark:text-neutral-300 leading-relaxed px-14 mx-auto">
                     <p>
-                        I am a Computer Science and Engineering undergrad at NIT Jamshedpur with a strong passion for collaboration and innovation. I thrive in environments where I can work with others to create impactful solutions, believing that the best ideas often come from teamwork. I actively contribute to open-source projects, finding immense satisfaction in being part of a global community that works together to solve challenges. I am always eager to learn from others, share my knowledge, and build something meaningful alongside like-minded individuals, whether through coding, problem-solving, or developing new ideas that push the boundaries of what's possible.
+                        I am a Computer Science and Engineering undergrad at NIT Jamshedpur with a strong passion for collaboration and innovation. I thrive in environments where I can work with others to create impactful solutions, believing that the best ideas often come from teamwork. I actively contribute to open-source projects, finding immense satisfaction in being part of a global community that works together to solve challenges. I am always eager to learn from others, share my knowledge, and build something meaningful alongside like-minded individuals, whether through coding, problem-solving, or developing new ideas that push the boundaries of what&apos;s possible.
                     </p>
                 </div>
             </div>
@@ -35,7 +35,7 @@ export function About() {
             <div className="text-4xl md:ml-80 ml-20 mt-5 font-normal text-neutral-600 dark:text-neutral-400">
                 Otherwise, just obsessed with
                 <FlipWords words={words}/> <br />
-                when I'm tired of development.
+                when I&apos;m tired of development.
             </div>
         </div>
     );
