@@ -9,7 +9,7 @@ export function MyTimeline() {
             content: (
                 <div >
                     <p
-                        className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+                        className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-8">
                         Learning new Technologies and Building projects
                     </p>
                     <div className="grid grid-cols-2 gap-4">
@@ -46,7 +46,7 @@ export function MyTimeline() {
             content: (
                 <div>
                     <p
-                        className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+                        className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-8">
                         Joined the Web Team of my institute, where I collaborate with senior developers to improve the functionality and appearance of the official website of my institute
                     </p>
                     <p
@@ -87,8 +87,8 @@ export function MyTimeline() {
             content: (
                 <div>
                     <p
-                        className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-                        Joined National Institute of Technology, Jamshedpur, after scoring 99.2 percentile in JEE Mains
+                        className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-4">
+                        Joined National Institute of Technology, Jamshedpur.
                     </p>
                     <div className="mb-8">
                         <div
@@ -146,8 +146,8 @@ export function MyTimeline() {
             content: (
                 <div>
                     <p
-                        className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                        Graduated from Little Flower School, completing my higher secondary education, with an overall percentage of 96.75 in Math-Science.
+                        className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-8">
+                        Graduated from Little Flower School, completing my higher secondary education.
                     </p>
                     <p
                         className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -183,26 +183,11 @@ export function MyTimeline() {
             ),
         },
         {
-            title: "2021",
-            content: (
-                <div>
-                    <p
-                        className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal">
-                        Completed my matriculation from Little Flower School, with an overall precentage of 99.2
-                    </p>
-                    {/*<p*/}
-                    {/*    className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">*/}
-
-                    {/*</p>*/}
-                </div>
-            ),
-        },
-        {
             title: "2005",
             content: (
                 <div>
                     <p
-                        className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+                        className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-8">
                         I was born.
                     </p>
                     {/*<p*/}

@@ -20,56 +20,56 @@ export function Contact() {
             icon: (
                 <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "www.linkedin.com/in/chandrima-hazra-65494a219",
         },
         {
             title: "GitHub",
             icon: (
                 <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://github.com/hazraChandrima",
         },
         {
             title: "Discord",
             icon: (
                 <IconBrandDiscord className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://discord.com/channels/6ndrima_83544",
         },
         {
             title: "Reddit",
             icon: (
                 <IconBrandReddit className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://www.reddit.com/user/CookEducational7483/",
         },
-        {
-            title: "Leetcode",
-            icon: (
-                <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
-        },
-        {
-            title: "Instagram",
-            icon: (
-                <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
-        },
+        // {
+        //     title: "Leetcode",
+        //     icon: (
+        //         <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        //     ),
+        //     href: "#",
+        // },
+        // {
+        //     title: "Instagram",
+        //     icon: (
+        //         <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        //     ),
+        //     href: "https://www.instagram.com/6ndrimaaa/",
+        // },
         {
             title: "Gmail",
             icon: (
                 <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "mailto:hazrachandrimalfs@gmail.com",
         },
         {
             title: "Twitter",
             icon: (
                 <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://x.com/hazra78436",
         },
 
     ];

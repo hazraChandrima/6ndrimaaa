@@ -4,7 +4,7 @@ import './navbar.css';
 export default function Navbar() {
     return (
         <nav
-            className="navbar w-full lg:visible fixed z-50 h-16 border-b backdrop-blur-md border-transparent shadow-xl scroll-smooth">
+            className="navbar invisible  w-full lg:visible fixed z-50 h-16 border-b backdrop-blur-md border-transparent shadow-xl scroll-smooth">
             <div className="container-fluid text-gray-100 h-full">
                 <div className="flex flex-row justify-between items-center h-full px-5">
 

@@ -3,7 +3,7 @@ import {About} from '@/components/Sections/about';
 import {Contact} from  '@/components/Sections/contact';
 import {Projects} from  '@/components/Sections/projects';
 import {Skills} from  '@/components/Sections/skills';
-import {MyTimeline} from  '@/components/Sections/timeline';
+// import {MyTimeline} from  '@/components/Sections/timeline';
 
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
-        <MyTimeline />
+        {/*<MyTimeline />*/}
         <Contact />
     </div>
   );
