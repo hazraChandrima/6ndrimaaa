@@ -1,11 +1,11 @@
 import { FocusCards } from "@/components/ui/focus-cards";
 import Image from "next/image";
 import React from "react";
-import mm from '@/assets/images/mm.png';
-import mvai from '@/assets/images/mvai.png';
-import portfolio from '@/assets/images/portfolio.png'
-import nirmas from '@/assets/images/nirmas.png'
-import myn from '@/assets/images/myn.png'
+import mm from '../../../public/images/mm.png';
+import mvai from '../../../public/images/mvai.png';
+import portfolio from '../../../public/images/portfolio.png'
+import nirmas from '../../../public/images/nirmas.png'
+import myn from '../../../public/images/myn.png'
 
 export function Projects() {
     const cards = [

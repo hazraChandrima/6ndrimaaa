@@ -1,7 +1,7 @@
 import React from "react";
 import { FlipWords } from "../ui/flip-words";
 import Image from "next/image";
-import pfp from "@/assets/images/profile.jpeg";
+import pfp from "../../../public/images/profile.jpeg";
 
 export function About() {
     const words = ["chess", "photography", "painting", "piano", "swimming"];
