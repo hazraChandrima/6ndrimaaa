@@ -104,7 +104,7 @@ export const MobileNavbar = () => {
                                             className="mb-6"
                                             variants={itemVariants}>
 
-                                    <h2 className="text-4xl text-gray-200 opacity-90 mb-2 hover:text-violet-300">
+                                    <h2 className="text-[2.2rem] font-light text-gray-200 opacity-90 mb-2 hover:text-violet-300">
                                     <Link href={`/${key.link}`} onClick={handleLinkClick}
                                     className="my-5"
                                     >

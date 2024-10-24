@@ -32,7 +32,7 @@ export function About() {
                 </div>
             </div>
 
-            <div className="text-2xl ml-10 min-[800px]:px-14 mt-5 font-normal text-neutral-600 dark:text-neutral-400">
+            <div className=" text-lg min-[420px]:text-xl min-[520px]:text-2xl ml-6 min-[520px]:ml-10 min-[800px]:px-14 mt-5 font-normal text-neutral-600 dark:text-neutral-400">
                 Otherwise, just obsessed with
                 <FlipWords words={words}/> <br />
                 when I&apos;m tired of development.
