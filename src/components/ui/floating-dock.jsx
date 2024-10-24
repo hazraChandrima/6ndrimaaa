@@ -89,13 +89,89 @@ const FloatingDockDesktop = ({ items, className }) => {
 };
 
 
+// function IconContainer({
+//   mouseX,
+//   title,
+//   icon,
+//   href
+// }) {
+//   let ref = useRef(null);
+//
+//   let distance = useTransform(mouseX, (val) => {
+//     let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
+//
+//     return val - bounds.x - bounds.width / 2;
+//   });
+//
+//   let widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+//   let heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+//
+//   let widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
+//   let heightTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
+//
+//   let width = useSpring(widthTransform, {
+//     mass: 0.1,
+//     stiffness: 150,
+//     damping: 12,
+//   });
+//   let height = useSpring(heightTransform, {
+//     mass: 0.1,
+//     stiffness: 150,
+//     damping: 12,
+//   });
+//
+//   let widthIcon = useSpring(widthTransformIcon, {
+//     mass: 0.1,
+//     stiffness: 150,
+//     damping: 12,
+//   });
+//   let heightIcon = useSpring(heightTransformIcon, {
+//     mass: 0.1,
+//     stiffness: 150,
+//     damping: 12,
+//   });
+//
+//   const [hovered, setHovered] = useState(false);
+//
+//   return (
+//     (<Link href={href}>
+//       <motion.div
+//         ref={ref}
+//         style={{ width, height }}
+//         onMouseEnter={() => setHovered(true)}
+//         onMouseLeave={() => setHovered(false)}
+//         className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative">
+//         <AnimatePresence>
+//           {hovered && (
+//             <motion.div
+//               initial={{ opacity: 0, y: 10, x: "-50%" }}
+//               animate={{ opacity: 1, y: 0, x: "-50%" }}
+//               exit={{ opacity: 0, y: 2, x: "-50%" }}
+//               className="px-2 py-0.5 whitespace-pre rounded-md bg-gray-100 border dark:bg-neutral-800 dark:border-neutral-900 dark:text-white border-gray-200 text-neutral-700 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs">
+//               {title}
+//             </motion.div>
+//           )}
+//         </AnimatePresence>
+//         <motion.div
+//           style={{ width: widthIcon, height: heightIcon }}
+//           className="flex flex-row items-center justify-center">
+//           {icon}
+//         </motion.div>
+//       </motion.div>
+//     </Link>)
+//   );
+// }
+
 function IconContainer({
-  mouseX,
-  title,
-  icon,
-  href
-}) {
+                         mouseX,
+                         title,
+                         icon,
+                         href
+                       }) {
   let ref = useRef(null);
+
+  // Get viewport width
+  const isSmallViewport = typeof window !== "undefined" && window.innerWidth < 500; // Adjust threshold as needed
 
   let distance = useTransform(mouseX, (val) => {
     let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
@@ -103,11 +179,12 @@ function IconContainer({
     return val - bounds.x - bounds.width / 2;
   });
 
-  let widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
-  let heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+  // Scale differently based on viewport size
+  let widthTransform = useTransform(distance, [-150, 0, 150], isSmallViewport ? [40, 40, 40] : [40, 80, 40]);
+  let heightTransform = useTransform(distance, [-150, 0, 150], isSmallViewport ? [40, 40, 40] : [40, 80, 40]);
 
-  let widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
-  let heightTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
+  let widthTransformIcon = useTransform(distance, [-150, 0, 150], isSmallViewport ? [20, 20, 20] : [20, 40, 20]);
+  let heightTransformIcon = useTransform(distance, [-150, 0, 150], isSmallViewport ? [20, 20, 20] : [20, 40, 20]);
 
   let width = useSpring(widthTransform, {
     mass: 0.1,
@@ -134,30 +211,30 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    (<Link href={href}>
-      <motion.div
-        ref={ref}
-        style={{ width, height }}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-        className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative">
-        <AnimatePresence>
-          {hovered && (
-            <motion.div
-              initial={{ opacity: 0, y: 10, x: "-50%" }}
-              animate={{ opacity: 1, y: 0, x: "-50%" }}
-              exit={{ opacity: 0, y: 2, x: "-50%" }}
-              className="px-2 py-0.5 whitespace-pre rounded-md bg-gray-100 border dark:bg-neutral-800 dark:border-neutral-900 dark:text-white border-gray-200 text-neutral-700 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs">
-              {title}
-            </motion.div>
-          )}
-        </AnimatePresence>
+      <Link href={href}>
         <motion.div
-          style={{ width: widthIcon, height: heightIcon }}
-          className="flex flex-row items-center justify-center">
-          {icon}
+            ref={ref}
+            style={{ width, height }}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative">
+          <AnimatePresence>
+            {hovered && (
+                <motion.div
+                    initial={{ opacity: 0, y: 10, x: "-50%" }}
+                    animate={{ opacity: 1, y: 0, x: "-50%" }}
+                    exit={{ opacity: 0, y: 2, x: "-50%" }}
+                    className="px-2 py-0.5 whitespace-pre rounded-md bg-gray-100 border dark:bg-neutral-800 dark:border-neutral-900 dark:text-white border-gray-200 text-neutral-700 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs">
+                  {title}
+                </motion.div>
+            )}
+          </AnimatePresence>
+          <motion.div
+              style={{ width: widthIcon, height: heightIcon }}
+              className="flex flex-row items-center justify-center">
+            {icon}
+          </motion.div>
         </motion.div>
-      </motion.div>
-    </Link>)
+      </Link>
   );
 }
