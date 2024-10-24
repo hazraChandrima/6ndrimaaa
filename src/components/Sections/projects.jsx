@@ -12,22 +12,27 @@ export function Projects() {
         {
             title: "Money Master",
             src: mm,
+            link: "https://github.com/hazraChandrima/budget-finance-tracker"
         },
         {
             title: "NIT Jamshedpur Lab" ,
             src: mvai,
+            link: "https://github.com/hazraChandrima/NIT-Jsr_Lab_frontend",
         },
         {
             title: "Personal Portfolio",
             src: portfolio,
+            link: "https://github.com/hazraChandrima/6ndrimaaa",
         },
         {
             title: "Nirmas",
             src: nirmas,
+            link: "https://github.com/hazraChandrima/nirmas",
         },
         {
             title: "Adding color analysis feature to E-Commerce app ",
             src: myn,
+            link: "https://github.com/hazraChandrima/Myntra_Hackerramp-24",
         },
     ];
 
