@@ -46,7 +46,7 @@ export function Projects() {
             repo: "https://github.com/hazraChandrima/nirmas",
         },
         {
-            title: "Adding color analysis feature to E-Commerce app ",
+            title: "Color Analysis tool",
             src: myn,
             link:"",
             repo: "https://github.com/hazraChandrima/Myntra_Hackerramp-24",
