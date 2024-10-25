@@ -1,38 +1,55 @@
-import { FocusCards } from "@/components/ui/focus-cards";
+// import { FocusCards } from "@/components/ui/focus-cards";
 import Image from "next/image";
 import React from "react";
 import mm from '../../../public/images/mm.png';
 import mvai from '../../../public/images/mvai.png';
 import portfolio from '../../../public/images/portfolio.png'
 import nirmas from '../../../public/images/nirmas.png'
-import myn from '../../../public/images/myn.png'
+import myn from '../../../public/images/myn.png';
+import github from '../../../public/images/github-icon.png';
+import link from '../../../public/images/link.png';
+
+import { Card, CardContent } from "@/components/ui/card"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel";
+import Link from "next/link";
 
 export function Projects() {
     const cards = [
         {
             title: "Money Master",
             src: mm,
-            link: "https://github.com/hazraChandrima/budget-finance-tracker"
+            link:"https://budget-finance-tracker.vercel.app/",
+            repo: "https://github.com/hazraChandrima/budget-finance-tracker"
         },
         {
             title: "NIT Jamshedpur Lab" ,
             src: mvai,
-            link: "https://github.com/hazraChandrima/NIT-Jsr_Lab_frontend",
+            link:"",
+            repo: "https://github.com/hazraChandrima/NIT-Jsr_Lab_frontend",
         },
         {
             title: "Personal Portfolio",
             src: portfolio,
-            link: "https://github.com/hazraChandrima/6ndrimaaa",
+            link:"",
+            repo: "https://github.com/hazraChandrima/6ndrimaaa",
         },
         {
             title: "Nirmas",
             src: nirmas,
-            link: "https://github.com/hazraChandrima/nirmas",
+            link:"",
+            repo: "https://github.com/hazraChandrima/nirmas",
         },
         {
             title: "Adding color analysis feature to E-Commerce app ",
             src: myn,
-            link: "https://github.com/hazraChandrima/Myntra_Hackerramp-24",
+            link:"",
+            repo: "https://github.com/hazraChandrima/Myntra_Hackerramp-24",
         },
     ];
 
@@ -41,13 +58,58 @@ export function Projects() {
             <div className="w-full flex flex-col justify-center items-center">
                 <div className="text-center">
                     <h1
-                        className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 my-10  pb-8">
+                        className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 my-10 pb-8">
                         My Projects
                     </h1>
                 </div>
             </div>
 
-            <FocusCards cards={cards}/>
+            {/*<div className="w-fit mx-auto flex justify-center items-center">*/}
+                <Carousel className=" mx-auto w-full max-w-md">
+                    <CarouselContent>
+                        {cards.map((card, index) => (
+                            <CarouselItem key={index}>
+                                <div className="p-4">
+                                    <Card>
+                                        <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
+                                            <div className="p-5 bg-neutral-800 rounded-xl">
+                                                <Image
+                                                    src={card.src}
+                                                    alt={`project ${index+1}`}
+                                                    width={350}
+                                                    height={330}
+                                                    className="rounded-xl"
+                                                />
+                                            </div>
+                                            <div className="px-2 mt-5 mb-2 w-full flex flex-row justify-between items-center">
+                                                <div className="text-xl">{card.title}</div>
+                                                <div className="flex flex-row items-center gap-5 justify-between">
+                                                    <div>
+                                                        <Link href={card.repo}>
+                                                            <Image src={github} alt={"repo"} width={32}
+                                                                   height={32}/>
+                                                        </Link>
+                                                    </div>
+                                                    <div>
+                                                        <Link href={card.link}>
+                                                            <Image src={link} alt={"repo"} width={30} height={30}/>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </div>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                    <CarouselPrevious/>
+                    <CarouselNext/>
+                </Carousel>
+            {/*</div>*/}
+
+
+            {/*<FocusCards cards={cards}/>*/}
 
             <div className="mt-24">
                 <h1 className="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 py-6 mb-8">
