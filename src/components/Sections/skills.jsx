@@ -47,7 +47,10 @@ export function Skills() {
                     <br/>
                     <img
                         src="https://skillicons.dev/icons?i=figma,selenium,vscode,vim"
-                        width="300px"/>
+                        width="300px"/><br/>
+                    <img
+                        src="https://skillicons.dev/icons?i=blender"
+                        width="75px"/>
                 </div>
                 <div className="mb-2">
                     <h1 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 pt-10 pb-6">
