@@ -30,25 +30,25 @@ export function Projects() {
         {
             title: "NIT Jamshedpur Lab" ,
             src: mvai,
-            link:"",
+            link:"https://nit-jsr-lab-frontend.vercel.app/",
             repo: "https://github.com/hazraChandrima/NIT-Jsr_Lab_frontend",
         },
         {
             title: "Personal Portfolio",
             src: portfolio,
-            link:"",
+            link:"https://6ndrimaaa.vercel.app/",
             repo: "https://github.com/hazraChandrima/6ndrimaaa",
         },
         {
             title: "Nirmas",
             src: nirmas,
-            link:"",
+            link:"https://sih-faq.vercel.app/",
             repo: "https://github.com/hazraChandrima/nirmas",
         },
         {
             title: "Color Analysis tool",
             src: myn,
-            link:"",
+            link:"https://github.com/hazraChandrima/Myntra_Hackerramp-24",
             repo: "https://github.com/hazraChandrima/Myntra_Hackerramp-24",
         },
     ];
