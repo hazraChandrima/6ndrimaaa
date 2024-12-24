@@ -1,19 +1,29 @@
+"use client"
+
 import React from "react";
 import { FlipWords } from "../ui/flip-words";
 import Image from "next/image";
 import pfp from "../../../public/images/profile.jpeg";
+import moveUp from "@/hooks/animations/moveUp"
+import { motion } from "framer-motion";
 
 export function About() {
     const words = ["chess", "painting", "piano"];
+    const {ref, controls} = moveUp();
 
     return (
         <div className="h-auto flex flex-col px-4 py-20 scroll-smooth" id="about">
-            <div className="text-center">
+            <motion.div
+                ref={ref}
+                initial={{ opacity: 0, y: 50 }}
+                animate={controls}
+                className="text-center"
+            >
                 <h1
                     className="text-6xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-10">
                     About me
                 </h1>
-            </div>
+            </motion.div>
             <div className="px-6 min-[480px]:px-10 flex flex-col items-center justify-center gap-4">
                 <div className="mt-12 ">
                     <Image

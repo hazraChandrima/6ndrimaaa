@@ -1,14 +1,25 @@
+"use client"
+
 import React from "react";
+import moveUp from "@/hooks/animations/moveUp"
+import { motion } from "framer-motion";
 
 export function Skills() {
+
+    const {ref, controls} = moveUp();
+
     return (
         <div className="h-auto flex flex-col px-4 py-20 scroll-smooth" id="skills">
-            <div className="text-center">
+            <motion.div
+                ref={ref}
+                initial={{ opacity: 0, y: 50 }}
+                animate={controls}
+                className="text-center">
                 <h1
                     className="text-5xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 my-10  pb-8">
                     Technologies I&apos;ve worked with
                 </h1>
-            </div>
+            </motion.div>
             <div align="center">
                 <div className="mb-2">
                     <h1 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 pb-6">

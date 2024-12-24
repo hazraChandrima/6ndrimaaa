@@ -1,13 +1,23 @@
+"use client"
+
 import React from "react";
 import { Spotlight } from "../ui/spotlight";
+import moveUp from "@/hooks/animations/moveUp"
+import { motion } from "framer-motion";
 
 export function Hero() {
+
+    const {ref, controls} = moveUp();
+
     return (
-        (
-            <div
-            className="scroll-smooth h-dvh w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+            <div className="scroll-smooth h-dvh w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
             <Spotlight className="-top-40 left-0 md:left-72 lg:left-60 md:-top-20" fill="white" />
-            <div className=" p-4 mt-5 max-w-7xl flex flex-col justify-center mx-auto relative z-10 w-full ">
+            <motion.div
+                ref={ref}
+                initial={{ opacity: 0, y: 40 }} // Start slightly below with 0 opacity
+                animate={controls}
+                className=" p-4 mt-5 max-w-7xl flex flex-col justify-center mx-auto relative z-10 w-full "
+            >
                 <h1
                     className="sm:text-8xl min-[560px]:text-7xl text-[3.3rem] px-8 sm:px-2 font-bold text-center -mt-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-10">
                     Hi, I&apos;m Chandrima.
@@ -20,7 +30,7 @@ export function Hero() {
                     I&apos;m a developer from India.
                     Sometimes, my code runs correctly... And those are the moments that keep me going!
                 </p>
-            </div>
-        </div>)
+            </motion.div>
+        </div>
     );
 }

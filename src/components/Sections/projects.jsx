@@ -1,3 +1,5 @@
+"use client"
+
 // import { FocusCards } from "@/components/ui/focus-cards";
 import Image from "next/image";
 import React from "react";
@@ -8,6 +10,8 @@ import nirmas from '../../../public/images/nirmas.png'
 import myn from '../../../public/images/myn.png';
 import github from '../../../public/images/github-icon.png';
 import link from '../../../public/images/link.png';
+import moveUp from "@/hooks/animations/moveUp"
+import { motion } from "framer-motion";
 
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -20,6 +24,9 @@ import {
 import Link from "next/link";
 
 export function Projects() {
+
+    const {ref, controls} = moveUp();
+
     const cards = [
         {
             title: "Money Master",
@@ -56,12 +63,16 @@ export function Projects() {
     return (
         <div className="h-auto px-4 py-20 scroll-smooth" id="projects">
             <div className="w-full flex flex-col justify-center items-center">
-                <div className="text-center">
+                <motion.div
+                    ref={ref}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={controls}
+                    className="text-center">
                     <h1
                         className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 my-10 pb-8">
                         My Projects
                     </h1>
-                </div>
+                </motion.div>
             </div>
 
             {/*<div className="w-fit mx-auto flex justify-center items-center">*/}

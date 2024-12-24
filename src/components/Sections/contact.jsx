@@ -11,8 +11,20 @@ import {
     IconBrandReddit,
     IconBrandX,
 } from "@tabler/icons-react";
+import { TypewriterEffect } from "../ui/typewriter-effect";
+
 
 export function Contact() {
+
+    const words = [
+        {
+            text: "Let's",
+        },
+        {
+            text: "Connect!",
+        },
+        ]
+
     const links = [
         {
             title: "LinkedIn",
@@ -73,7 +85,7 @@ export function Contact() {
                 <h1
                     className="text-5xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-10 pb-8 "
                 >
-                    Let&apos;s Connect!
+                    <TypewriterEffect words={words} />
                 </h1>
             </div>
             <FloatingDock
