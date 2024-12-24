@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { useAnimation } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
-const moveUp = () => {
+const useMoveUp = () => {
     const controls = useAnimation();
     const [ref, inView] = useInView({
         triggerOnce: true,
@@ -24,4 +24,4 @@ const moveUp = () => {
     return { ref, controls };
 };
 
-export default moveUp;
+export default useMoveUp;

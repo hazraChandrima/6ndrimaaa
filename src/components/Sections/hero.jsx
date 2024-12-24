@@ -2,12 +2,12 @@
 
 import React from "react";
 import { Spotlight } from "../ui/spotlight";
-import moveUp from "@/hooks/animations/moveUp"
+import useMoveUp from "@/hooks/animations/moveUp"
 import { motion } from "framer-motion";
 
 export function Hero() {
 
-    const {ref, controls} = moveUp();
+    const {ref, controls} = useMoveUp();
 
     return (
             <div className="scroll-smooth h-dvh w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">

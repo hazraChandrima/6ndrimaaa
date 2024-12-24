@@ -10,7 +10,7 @@ import nirmas from '../../../public/images/nirmas.png'
 import myn from '../../../public/images/myn.png';
 import github from '../../../public/images/github-icon.png';
 import link from '../../../public/images/link.png';
-import moveUp from "@/hooks/animations/moveUp"
+import useMoveUp from "@/hooks/animations/moveUp"
 import { motion } from "framer-motion";
 
 import { Card, CardContent } from "@/components/ui/card"
@@ -25,7 +25,7 @@ import Link from "next/link";
 
 export function Projects() {
 
-    const {ref, controls} = moveUp();
+    const {ref, controls} = useMoveUp();
 
     const cards = [
         {

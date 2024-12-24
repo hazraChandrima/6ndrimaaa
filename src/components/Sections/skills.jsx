@@ -1,12 +1,12 @@
 "use client"
 
 import React from "react";
-import moveUp from "@/hooks/animations/moveUp"
+import useMoveUp from "@/hooks/animations/moveUp"
 import { motion } from "framer-motion";
 
 export function Skills() {
 
-    const {ref, controls} = moveUp();
+    const {ref, controls} = useMoveUp();
 
     return (
         <div className="h-auto flex flex-col px-4 py-20 scroll-smooth" id="skills">
