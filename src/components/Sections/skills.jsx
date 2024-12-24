@@ -26,7 +26,7 @@ export function Skills() {
                         Languages
                     </h1>
                     <img
-                        src="https://skillicons.dev/icons?i=js,python,java,c" width="300px"/>
+                        src="https://skillicons.dev/icons?i=js,python,java,c,bash" width="375px"/>
                 </div>
                 <div className="mb-2">
                     <h1 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 pt-10 pb-6">
