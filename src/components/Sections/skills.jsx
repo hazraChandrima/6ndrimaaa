@@ -88,8 +88,8 @@ export function Skills() {
                         Databases
                     </h1>
                     <img
-                        src="https://skillicons.dev/icons?i=postgres,mongo"
-                        width="150px"/>
+                        src="https://skillicons.dev/icons?i=postgres,mysql,mongo"
+                        width="225px"/>
                 </motion.div>
 
                 <motion.div
@@ -122,11 +122,11 @@ export function Skills() {
                     className="mb-2"
                 >
                     <h1 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 pt-10 pb-6">
-                        Operating System
+                        Operating System / Kernel
                     </h1>
                     <img
-                        src="https://skillicons.dev/icons?i=windows,powershell"
-                        width="150px"/>
+                        src="https://skillicons.dev/icons?i=linux,windows,powershell"
+                        width="225px"/>
                 </motion.div>
 
                 {/*<a href="https://skillicons.dev">*/}
