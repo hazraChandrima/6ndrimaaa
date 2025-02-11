@@ -3,7 +3,7 @@
 import React from "react";
 import { FlipWords } from "../ui/flip-words";
 import Image from "next/image";
-import pfp from "../../../public/images/profile.jpeg";
+import pfp from "../../../public/images/pfp.jpeg";
 import useMoveUp from "@/hooks/animations/moveUp"
 import { motion } from "framer-motion";
 
