@@ -9,6 +9,7 @@ import portfolio from '../../../public/images/portfolio.png'
 import nirmas from '../../../public/images/nirmas.png'
 import myn from '../../../public/images/myn.png';
 import github from '../../../public/images/github-icon.png';
+import awaaz from '../../../public/images/awaaz.png';
 import link from '../../../public/images/link.png';
 import useMoveUp from "@/hooks/animations/moveUp"
 import { motion } from "framer-motion";
@@ -33,6 +34,12 @@ export function Projects() {
             src: mm,
             link:"https://budget-finance-tracker.vercel.app/",
             repo: "https://github.com/hazraChandrima/budget-finance-tracker"
+        },
+        {
+            title: "Awaaz: Online Petition Platform",
+            src: awaaz,
+            link: "https://github.com/hazraChandrima/awaaz",
+            repo: "https://awaaz-alpha.vercel.app/",
         },
         {
             title: "NIT Jamshedpur Lab" ,
