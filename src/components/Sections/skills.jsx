@@ -13,7 +13,7 @@ export function Skills() {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2, // Delay between children animations
+                staggerChildren: 0.2, 
             },
         },
     };
@@ -105,6 +105,21 @@ export function Skills() {
                     <img
                         src="https://skillicons.dev/icons?i=aws"
                         width="75px" />
+                </motion.div>
+
+                 <motion.div
+                    ref={ref}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={controls}
+                    variants={itemVariants}
+                    className="mb-2"
+                >
+                    <h1 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 pt-10 pb-6">
+                        Cloud Services
+                    </h1>
+                    <img
+                        src="https://skillicons.dev/icons?i=aws"
+                        width="75px"/>
                 </motion.div>
 
                 <motion.div
