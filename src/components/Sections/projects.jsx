@@ -10,6 +10,7 @@ import nirmas from '../../../public/images/nirmas.png'
 import myn from '../../../public/images/myn.png';
 import github from '../../../public/images/github-icon.png';
 import awaaz from '../../../public/images/awaaz.png';
+import ti from '../../../public/images/ti.png';
 import link from '../../../public/images/link.png';
 import useMoveUp from "@/hooks/animations/moveUp"
 import { motion } from "framer-motion";
@@ -40,6 +41,12 @@ export function Projects() {
             src: awaaz,
             link: "https://github.com/hazraChandrima/awaaz",
             repo: "https://awaaz-alpha.vercel.app/",
+        },
+        {
+            title: "EduConnect",
+            src: ti,
+            link:"https://edu-frontend-1.onrender.com/",
+            repo: "https://github.com/hazraChandrima/EduConnect",
         },
         {
             title: "NIT Jamshedpur Lab" ,
