@@ -82,7 +82,7 @@ export const MobileNavbar = () => {
                                 className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                                 <span className="font-semibold mx-4">
                                     <Link
-                                        href="https://drive.google.com/file/d/1Z91syH0CDDED9wVGO_XvtOj7uUqvYsN6/view?usp=sharing">Resume</Link>
+                                        href="https://drive.google.com/file/d/1k_68Twa-e3_vVSDvaQPtARCdEPRnlXL5/view?usp=sharing">Resume</Link>
                                 </span>
                             </span>
                </button>
