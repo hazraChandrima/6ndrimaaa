@@ -91,9 +91,9 @@ export function Contact() {
                 mobileClassName="translate-y-20"
                 items={links}
             />
-            <div className="absolute bottom-4 text-center text-violet-300 text-sm w-full z-10 px-5">
-                <p>&copy; {new Date().getFullYear()} Chandrima Hazra. All rights reserved.</p>
-            </div>
+            {/*<div className="absolute bottom-4 text-center text-violet-300 text-sm w-full z-10 px-5">*/}
+            {/*    <p>&copy; {new Date().getFullYear()} Chandrima Hazra. All rights reserved.</p>*/}
+            {/*</div>*/}
         </div>
     );
 }
