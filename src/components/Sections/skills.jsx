@@ -55,7 +55,7 @@ export function Skills() {
                         Languages
                     </h1>
                     <img
-                        src="https://skillicons.dev/icons?i=js,python,java,c,bash" width="375px"/>
+                        src="https://skillicons.dev/icons?i=js,python,java,c,cpp,bash" width="450px"/>
                 </motion.div>
 
                 <motion.div
@@ -100,11 +100,11 @@ export function Skills() {
                     className="mb-2"
                 >
                     <h1 className="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 pt-10 pb-6">
-                        Cloud Services
+                        Cloud & Devops
                     </h1>
                     <img
-                        src="https://skillicons.dev/icons?i=aws"
-                        width="75px" />
+                        src="https://skillicons.dev/icons?i=aws,docker,googlecloud"
+                        width="225px" />
                 </motion.div>
 
                 <motion.div
@@ -122,8 +122,8 @@ export function Skills() {
                         width="300px"/>
                     <br/>
                     <img
-                        src="https://skillicons.dev/icons?i=figma,selenium,vscode,vim"
-                        width="300px"/><br/>
+                        src="https://skillicons.dev/icons?i=figma,selenium,vscode,vim,nvim"
+                        width="375px"/><br/>
                     <img
                         src="https://skillicons.dev/icons?i=blender"
                         width="75px"/>
