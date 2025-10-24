@@ -122,7 +122,7 @@ export function Skills() {
                         width="300px"/>
                     <br/>
                     <img
-                        src="https://skillicons.dev/icons?i=figma,selenium,vscode,vim,nvim"
+                        src="https://skillicons.dev/icons?i=figma,selenium,vscode,vim,neovim"
                         width="375px"/><br/>
                     <img
                         src="https://skillicons.dev/icons?i=blender"
